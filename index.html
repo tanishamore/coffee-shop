@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cherry's Coffee Shop</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Cherry's Coffee Shop</h1>
+    <nav>
+      <button id="hotBtn" onclick="toggleMenu('hot')">Hot Coffees</button>
+      <button id="coldBtn" onclick="toggleMenu('cold')">Cold Coffees</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hot Coffees -->
+    <section id="hot-section" class="menu-section">
+      <h2>Hot Coffees</h2>
+      <div class="menu-list">
+        <article><h3>Espresso</h3><p>$1.75</p></article>
+        <article><h3>Cappuccino</h3><p>$3.00</p></article>
+        <article><h3>Flat White</h3><p>$2.25</p></article>
+        <article><h3>Hot Chai Latte</h3><p>$3.25</p></article>
+        <article><h3>Mocha</h3><p>$3.50</p></article>
+        <article><h3>Latte</h3><p>$3.00</p></article>
+      </div>
+    </section>
+
+    <!-- Cold Coffees -->
+    <section id="cold-section" class="menu-section" style="display: none;">
+      <h2>Cold Coffees</h2>
+      <div class="menu-list">
+        <article><h3>Iced Americano</h3><p>$2.50</p></article>
+        <article><h3>Iced Latte</h3><p>$3.25</p></article>
+        <article><h3>Frappuccino</h3><p>$3.75</p></article>
+        <article><h3>Cold Brew</h3><p>$2.95</p></article>
+        <article><h3>Iced Mocha</h3><p>$3.60</p></article>
+        <article><h3>Iced Caramel Macchiato</h3><p>$3.85</p></article>
+      </div>
+    </section>
+
+    <!-- Pastries -->
+    <section class="menu-section">
+      <h2>Pastries & Snacks</h2>
+      <div class="menu-list">
+        <article><h3>Croissant</h3><p>$2.00</p></article>
+        <article><h3>Blueberry Muffin</h3><p>$2.50</p></article>
+        <article><h3>Chocolate Cookie</h3><p>$1.50</p></article>
+        <article><h3>Vegan Brownie</h3><p>$2.75</p></article>
+        <article><h3>Bagel w/ Cream Cheese</h3><p>$2.25</p></article>
+      </div>
+    </section>
+
+    <!-- Specialty Drinks -->
+    <section class="menu-section">
+      <h2>Specialty Drinks</h2>
+      <div class="menu-list">
+        <article><h3>Matcha Latte</h3><p>$3.75</p></article>
+        <article><h3>Turmeric Latte</h3><p>$3.50</p></article>
+        <article><h3>Iced Hibiscus Tea</h3><p>$2.80</p></article>
+        <article><h3>Hot Apple Cider</h3><p>$3.00</p></article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Cherry's Coffee Shop</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
